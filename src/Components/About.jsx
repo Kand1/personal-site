@@ -13,12 +13,11 @@ const ImgAndSpan = (props) => {
 }
 
 const RowOfSpans = (props) => {
-    let spans = props.spans.map(text => <div className="Content__about-me_background">{text}</div>)
+    let spans = props.spans.map(text => <li className="Content__about-me_background">{text}</li>)
     return (
-            <div className="Content__about-me_inline">
-
+            <ul className="Content__about-me_list">
                 {spans}
-            </div>
+            </ul>
     )
 }
 
@@ -59,18 +58,27 @@ export const About = (props) => {
             <div className="Content__about-me_h" >
                 Technologies
             </div>
-            <div className="Content__about-me_inline">
-                <div className="Content__about-me_p" >
-                    Languages:
-                </div>
-                <RowOfSpans spans = {["JS", "HTML", "CSS", "Python3", "c/c++"]}/>
-            </div>
-
             <div className="Content__about-me">
-                In my biggest pet-project on ReactJS i used:
-                axios, react-router-dom, react-redux, redux-thunk,
-                react-final-form. <br></br>
-                Also, I was studying python3 and c/c++ in my university.
+                <div className="Content__about-me_str-item">
+                <span className="Content__about-me_p" >
+                    Languages:
+                </span>
+                    <RowOfSpans spans = {["JS", "HTML", "CSS", "SCSS"]}/>
+                </div>
+
+                <div className="Content__about-me_str-item">
+                <span className="Content__about-me_p" >
+                    Also Worked With:
+                </span>
+                    <RowOfSpans spans = {["Python3", "C/C++"]}/>
+                </div>
+
+                <div className="Content__about-me_str-item">
+                <span className="Content__about-me_p" >
+                    Frameworks / Libraries:
+                </span>
+                    <RowOfSpans spans = {["React" , "axios", "react-router-dom", "react-redux", "redux-thunk", "react-final-form"]}/>
+                </div>
             </div>
 
         </div>
