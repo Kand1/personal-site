@@ -1,0 +1,60 @@
+.Content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.Content__header {
+    color: #EEEEEE;
+    text-shadow: 2px 0 #db3eb1, -2px 0 #41b6e6;
+    background-color: #222222;
+    padding: 0 1rem;
+    font-size: 65px;
+    text-align: left;
+    width: 200px;
+}
+
+.Content__about-me_background {
+    margin-top: 27.5px;
+    padding: 5px;
+    margin-left: 5px;
+    line-height: 1.2;
+    color: aliceblue;
+    background-color: #5c2686;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.Content__about-me_inline {
+    vertical-align: center;
+    display: flex;
+}
+
+.Content__about-me_p {
+    margin-top: 30px;
+    line-height: 1.2;
+    color: #db3eb1;
+}
+
+.Content__about-me_h {
+    text-decoration-line: underline;
+    line-height: 1.2;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.Content__about-me {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.Content__about-me__img {
+    width: 0.9em;
+    height: 0.9em;
+    padding-right: 6px;
+}

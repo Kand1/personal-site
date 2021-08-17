@@ -1,0 +1,42 @@
+
+.App {
+  font-family: Inconsolata,monospace;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 70px 1fr ;
+  grid-template-areas: "h" "c" ;
+  font-size: calc(12px + 1vmin);
+}
+
+.Content {
+  margin: 3vh 25vw 5vh 25vw;
+  grid-area: c;
+}
+
+.App header {
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: ". n ." ;
+  grid-area: h;
+  box-shadow: 0.2rem 0.2rem #db3eb1;
+  background-color: #333333;
+}
+
+.app-header {
+  grid-area: n;
+  display: flex;
+}
+
+.app-header__item {
+  text-shadow: 0.05rem 0.05rem #db3eb1;
+  margin: auto 25px auto -7px;
+  padding: 7px;
+  color: aliceblue;
+  font-size: 1.4em;
+  transition: all 300ms  ease;
+}
+.app-header__item:hover {
+  text-shadow: 0.2rem 0.2rem #db3eb1;
+  transition: all 300ms  ease;
+}
