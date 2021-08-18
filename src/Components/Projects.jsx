@@ -42,7 +42,7 @@ export const Projects = (props) => {
                     src = {src2}
                     text = {text1}
                     git = {"https://github.com/Kand1/Learn_React"}
-                    deploy = {"https://kand1.github.io/personal-site/"}
+                    deploy = {"https://kand1.github.io/Learn_React/"}
                 />
                 <Project
                     name = "Simple test task"
