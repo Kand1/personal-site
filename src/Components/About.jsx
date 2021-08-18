@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
 import './../About.css';
 
-const ImgAndSpan = (props) => {
+export const ImgAndSpan = (props) => {
     return (
         <li>
             <img src = {props.src} className="Content__about-me__img"/>
@@ -12,7 +12,7 @@ const ImgAndSpan = (props) => {
     )
 }
 
-const RowOfSpans = (props) => {
+export const RowOfSpans = (props) => {
     let spans = props.spans.map(text => <li className="Content__about-me_background">{text}</li>)
     return (
             <ul className="Content__about-me_list">
@@ -68,14 +68,14 @@ export const About = (props) => {
 
                 <div className="Content__about-me_str-item">
                 <span className="Content__about-me_p" >
-                    Also Worked With:
+                    Also worked with:
                 </span>
                     <RowOfSpans spans = {["Python3", "C/C++"]}/>
                 </div>
 
                 <div className="Content__about-me_str-item">
                 <span className="Content__about-me_p" >
-                    Frameworks / Libraries:
+                    JS libraries i worked with:
                 </span>
                     <RowOfSpans spans = {["React" , "axios", "react-router-dom", "react-redux", "redux-thunk", "react-final-form"]}/>
                 </div>

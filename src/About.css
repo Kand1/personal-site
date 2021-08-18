@@ -46,6 +46,7 @@
 }
 
 .Content__about-me_p {
+    font-weight: bold;
     grid-area: p;
     padding: 0;
     line-height: 1;

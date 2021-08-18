@@ -13,14 +13,19 @@
   grid-area: c;
 }
 
+.Content_p {
+  margin: 3vh 20vw 5vh 20vw;
+  grid-area: c;
+}
+
 .App header {
 
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: ". n ." ;
   grid-area: h;
-  box-shadow: 0.2rem 0.2rem #db3eb1;
-  background-color: #333333;
+  box-shadow: 0 0.2rem #db3eb1;
+  background-color: #333;
 }
 
 .app-header {
@@ -44,6 +49,9 @@
 @media (max-width: 700px) {
   .Content {
     margin: 3vh 25px 5vh 25px;
+  }
+  .Content_p {
+    margin: 3vh 50px 5vh 50px;
   }
 
   .App header {
