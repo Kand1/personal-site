@@ -1,5 +1,14 @@
-import {NavLink} from "react-router-dom";
-import './../About.css';
+import "./../Projects.css"
+import "./../About.css"
+import "./../App.css"
+import src2 from "../assets/table-test.jpg";
+import {Project} from "./Projects";
+import {Element} from "react-scroll";
+
+
+const text1 = "The main project where i was learning React and other libraries that you may find on page 'About me'"
+const text2 = "A small test task i made for city-mobil. Dynamic table where you can filter cars by field or by key word." +
+    " Content of the table parses from JSON"
 
 export const ImgAndSpan = (props) => {
     return (
@@ -24,9 +33,11 @@ export const RowOfSpans = (props) => {
 export const About = (props) => {
     return(
         <div className = "Content">
-            <div className = "Content__header">
-                ウラド
-            </div>
+            <Element name="About_me">
+                <div className = "Content__header">
+                    ウラド
+                </div>
+            </Element>
             <ul className="Content__about-me">
                 <ImgAndSpan
                     text = "Volodin Vlad"
@@ -80,6 +91,28 @@ export const About = (props) => {
                     <RowOfSpans spans = {["React" , "axios", "react-router-dom", "react-redux", "redux-thunk", "react-final-form"]}/>
                 </div>
             </div>
+            <Element name="Projects">
+                <div className="Content__about-me_h" >
+                    Projects
+                </div>
+            </Element>
+                <div className="Content__projects">
+                    <Project
+                        name = "So-called social network"
+                        src = {src2}
+                        text = {text1}
+                        git = {"https://github.com/Kand1/Learn_React"}
+                        deploy = {"https://kand1.github.io/Learn_React/"}
+                    />
+                    <Project
+                        name = "Simple test task"
+                        src = {src2}
+                        text = {text2}
+                        git = {"https://github.com/Kand1/city-mobil-test-case"}
+                        deploy = {"https://kand1.github.io/city-mobil-test-case/"}
+                    />
+                </div>
+
 
         </div>
 

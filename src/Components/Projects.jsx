@@ -5,11 +5,7 @@ import src1 from "../assets/social-network.jpg"
 import src2 from "../assets/table-test.jpg"
 
 
-const text1 = "The main project where i was learning React and other libraries that you may find on page 'About me'"
-const text2 = "A small test task i made for city-mobil. Dynamic table where you can filter cars by field or by key word." +
-    " Content of the table parses from JSON"
-
-const Project = (props) => {
+export const Project = (props) => {
     return ( <div className="Content__projects__item">
             <div className="Content__projects__item__about_h">
                 {props.name}
@@ -31,27 +27,4 @@ const Project = (props) => {
 
         </div>
     )
-}
-
-export const Projects = (props) => {
-    return(
-        <div className = "Content_p">
-            <div className="Content__projects">
-                <Project
-                    name = "So-called social network"
-                    src = {src2}
-                    text = {text1}
-                    git = {"https://github.com/Kand1/Learn_React"}
-                    deploy = {"https://kand1.github.io/Learn_React/"}
-                />
-                <Project
-                    name = "Simple test task"
-                    src = {src2}
-                    text = {text2}
-                    git = {"https://github.com/Kand1/city-mobil-test-case"}
-                    deploy = {"https://kand1.github.io/city-mobil-test-case/"}
-                />
-            </div>
-        </div>
-    );
 }
