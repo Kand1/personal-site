@@ -56,6 +56,10 @@ export const About = (props) => {
                     text = "volodin.vlad.01@mail.ru"
                     src = "https://twemoji.maxcdn.com/2/svg/1f4e8.svg"
                 />
+                <ImgAndSpan
+                    text = "Telegram: @Kand111"
+                    src = "https://twemoji.maxcdn.com/2/svg/1f4e8.svg"
+                />
             </ul>
 
             <div className="Content__about-me_h" >
@@ -63,11 +67,11 @@ export const About = (props) => {
             </div>
 
             <div className="Content__about-me">
-                Currently studying Software Engineering (Developing Software for Computers and Automation Systems ) in Bauman Moscow State Technical University.
+                Currently studying Software Engineering ( 3rd course of Developing Software for Computers and Automation Systems ) in Bauman Moscow State Technical University.
                 There I've studied algorithms, data structures, data bases (PostgreSQL), C and C++ languages, OOP.
                 <p/>
                 I've studied JS / HTML / CSS / ReactJS / Redux on my own.
-                I used all of this technologies in my main project, that you can find in the 'Projects' section.
+                I used all these technologies in my main project, that you can find in the 'Projects' section.
 
             </div>
 
