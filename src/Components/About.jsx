@@ -1,12 +1,13 @@
 import "./../Projects.css"
 import "./../About.css"
 import "./../App.css"
+import src1 from "../assets/social-network.jpg";
 import src2 from "../assets/table-test.jpg";
 import {Project} from "./Projects";
 import {Element} from "react-scroll";
 
 
-const text1 = "The main project where i was learning React and other libraries that you may find on page 'About me'"
+const text1 = "The main project where i was learning React and other libraries that you may find in the 'Technologies' section"
 const text2 = "A small test task i made for city-mobil. Dynamic table where you can filter cars by field or by key word." +
     " Content of the table parses from JSON"
 
@@ -44,12 +45,12 @@ export const About = (props) => {
                     src = "https://twemoji.maxcdn.com/2/72x72/1f9d1.png"
                 />
                 <ImgAndSpan
-                    text = "Software Developer"
-                    src = "https://twemoji.maxcdn.com/2/72x72/1f4bb.png"
-                />
-                <ImgAndSpan
                     text = "Russia, Moscow"
                     src = "https://twemoji.maxcdn.com/2/svg/1f4cd.svg"
+                />
+                <ImgAndSpan
+                    text = "Frontend Developer"
+                    src = "https://twemoji.maxcdn.com/2/72x72/1f4bb.png"
                 />
                 <ImgAndSpan
                     text = "volodin.vlad.01@mail.ru"
@@ -62,8 +63,12 @@ export const About = (props) => {
             </div>
 
             <div className="Content__about-me">
-                I`m junior frontend developer.
                 Currently studying Software Engineering (Developing Software for Computers and Automation Systems ) in Bauman Moscow State Technical University.
+                There I've studied algorithms, data structures, data bases (PostgreSQL), C and C++ languages, OOP.
+                <p/>
+                I've studied JS / HTML / CSS / ReactJS / Redux on my own.
+                I used all of this technologies in my main project, that you can find in the 'Projects' section.
+
             </div>
 
             <div className="Content__about-me_h" >
@@ -99,7 +104,7 @@ export const About = (props) => {
                 <div className="Content__projects">
                     <Project
                         name = "So-called social network"
-                        src = {src2}
+                        src = {src1}
                         text = {text1}
                         git = {"https://github.com/Kand1/Learn_React"}
                         deploy = {"https://kand1.github.io/Learn_React/"}
