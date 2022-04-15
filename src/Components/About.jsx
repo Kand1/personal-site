@@ -4,6 +4,7 @@ import "./../App.css"
 import src1 from "../assets/social-network.jpg";
 import src2 from "../assets/table-test.jpg";
 import src3 from "../assets/src3.jpg";
+import src4 from "../assets/friend-list.jpg";
 import {Project} from "./Projects";
 import {Element} from "react-scroll";
 
@@ -12,7 +13,8 @@ const text1 = "The main project where i was learning React and other libraries t
 const text2 = "A small test task i made for city-mobil. Dynamic table where you can filter cars by field or by key word." +
     " Content of the table parses from JSON"
 const text3 = "Table with currency exchange rates. You can click on any currency to see changes for 10 days period." +
-    "Api: https://www.cbr-xml-daily.ru/"
+    " Api: https://www.cbr-xml-daily.ru/"
+const text4 = "Test web app for authorization with VK and Drag'n'Drop HTML api."
 
 
 export const ImgAndSpan = (props) => {
@@ -74,8 +76,8 @@ export const About = (props) => {
                 Currently studying Software Engineering ( 3rd course of Developing Software for Computers and Automation Systems ) in Bauman Moscow State Technical University.
                 There I've studied algorithms, data structures, data bases (PostgreSQL), C and C++ languages, OOP.
                 <p/>
-                I've studied JS / HTML / CSS / ReactJS / Redux on my own.
-                I used all these technologies in my main project, that you can find in the 'Projects' section.
+                I've studied JS / HTML / CSS / React / Vue / on my own.
+                I used all these technologies in my projects, that you can find in the 'Projects' section.
 
             </div>
 
@@ -101,7 +103,7 @@ export const About = (props) => {
                 <span className="Content__about-me_p" >
                     JS libraries i worked with:
                 </span>
-                    <RowOfSpans spans = {["React", "redux", "react-redux",  "axios", "react-router-dom", "redux-thunk", "react-final-form", "react-tooltip"]}/>
+                    <RowOfSpans spans = {["React", "Vue2", "redux", "react-redux", "vuex", "axios"]}/>
                 </div>
             </div>
             <Element name="Projects">
@@ -116,6 +118,13 @@ export const About = (props) => {
                         text = {text1}
                         git = {"https://github.com/Kand1/Learn_React"}
                         deploy = {"https://kand1.github.io/Learn_React/"}
+                    />
+                    <Project
+                        name = "Friend list from VK"
+                        src = {src4}
+                        text = {text4}
+                        git = {"https://github.com/Kand1/vue2-friend-list-test-case"}
+                        deploy = {"https://kand1.github.io/vue2-friend-list-test-case/"}
                     />
                     <Project
                         name = "Simple test task"

@@ -2,11 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .Content__projects__item {
-    flex: 1 1 270px;
+    flex: 0 1 auto;
+    max-width: 350px;
     margin-top: 20px;
     margin-right: 20px;
     background-color: #333;
