@@ -5,16 +5,18 @@ import src1 from "../assets/social-network.jpg";
 import src2 from "../assets/table-test.jpg";
 import src3 from "../assets/src3.jpg";
 import src4 from "../assets/friend-list.jpg";
+import src5 from "../assets/photo-gallery.jpg";
 import {Project} from "./Projects";
 import {Element} from "react-scroll";
 
 
-const text1 = "The main project where i was learning React and other libraries that you may find in the 'Technologies' section"
+const text1 = "The main project where i was learning React, redux, react-redux and other libraries."
 const text2 = "A small test task i made for city-mobil. Dynamic table where you can filter cars by field or by key word." +
     " Content of the table parses from JSON"
 const text3 = "Table with currency exchange rates. You can click on any currency to see changes for 10 days period." +
     " Api: https://www.cbr-xml-daily.ru/"
 const text4 = "Test web app for authorization with VK and Drag'n'Drop HTML api."
+const text5 = "Photo gallery where you can open photo or add a new one."
 
 
 export const ImgAndSpan = (props) => {
@@ -125,6 +127,13 @@ export const About = (props) => {
                         text = {text4}
                         git = {"https://github.com/Kand1/vue2-friend-list-test-case"}
                         deploy = {"https://kand1.github.io/vue2-friend-list-test-case/"}
+                    />
+                    <Project
+                        name = "Photo gallery"
+                        src = {src5}
+                        text = {text5}
+                        git = {"https://github.com/Kand1/test-project-for-vue2-vuex/"}
+                        deploy = {"https://kand1.github.io/test-project-for-vue2-vuex/"}
                     />
                     <Project
                         name = "Simple test task"
