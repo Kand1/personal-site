@@ -1,8 +1,9 @@
 .Content__projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    grid-template-rows: repeat(auto-fill, 500px);
+    grid-gap: 16px;
+    justify-content: space-around;
 }
 
 .Content__projects__item {
