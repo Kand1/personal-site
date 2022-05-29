@@ -6,17 +6,19 @@ import src2 from "../assets/table-test.jpg";
 import src3 from "../assets/src3.jpg";
 import src4 from "../assets/friend-list.jpg";
 import src5 from "../assets/product-list.jpg";
+import src6 from "../assets/cryptocurrency-converter.jpg";
 import {Project} from "./Projects";
 import {Element} from "react-scroll";
 
 
-const text1 = "The main project where i was learning React, redux, react-redux and other libraries."
+const text1 = "The first project where i was learning React, redux, react-redux and other libraries."
 const text2 = "A small test task i made for city-mobil. Dynamic table where you can filter cars by field or by key word." +
     " Content of the table parses from JSON"
 const text3 = "Table with currency exchange rates. You can click on any currency to see changes for 10 days period." +
     " Api: https://www.cbr-xml-daily.ru/"
 const text4 = "Test web app for authorization with VK and Drag'n'Drop HTML api."
 const text5 = "Product adding form with validation and product list with animations of filtering and deleting."
+const text6 = "Cryptocurrency converter with graph of exchange rate for 2 week period."
 
 
 export const ImgAndSpan = (props) => {
@@ -105,7 +107,7 @@ export const About = (props) => {
                 <span className="Content__about-me_p" >
                     JS libraries i worked with:
                 </span>
-                    <RowOfSpans spans = {["React", "Vue2", "redux", "react-redux", "vuex", "axios"]}/>
+                    <RowOfSpans spans = {["React", "Vue2", "redux", "react-redux", "vuex", "axios", "vuetify", "chart.js"]}/>
                 </div>
             </div>
             <Element name="Projects">
@@ -127,6 +129,13 @@ export const About = (props) => {
                         text = {text5}
                         git = {"https://github.com/Kand1/product-list-test-case/"}
                         deploy = {"https://kand1.github.io/product-list-test-case/"}
+                    />
+                    <Project
+                        name = "Cryptocurrency converter"
+                        src = {src6}
+                        text = {text6}
+                        git = {"https://github.com/Kand1/cryptocurrency-converter-test-case"}
+                        deploy = {"https://kand1.github.io/cryptocurrency-converter-test-case"}
                     />
                     <Project
                         name = "Friend list from VK"
