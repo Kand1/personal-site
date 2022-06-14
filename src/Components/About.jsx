@@ -7,6 +7,7 @@ import src3 from "../assets/src3.jpg";
 import src4 from "../assets/friend-list.jpg";
 import src5 from "../assets/product-list.jpg";
 import src6 from "../assets/cryptocurrency-converter.jpg";
+import src7 from "../assets/chess.jpg"
 import {Project} from "./Projects";
 import {Element} from "react-scroll";
 
@@ -19,6 +20,8 @@ const text3 = "Table with currency exchange rates. You can click on any currency
 const text4 = "Test web app for authorization with VK and Drag'n'Drop HTML api."
 const text5 = "Product adding form with validation and product list with animations of filtering and deleting."
 const text6 = "Cryptocurrency converter with graph of exchange rate for 2 week period."
+const text7 = <div>Work in progress! <br/> Done: fully playable local 4 player chess. <br/> To do: make a modern UI using bootstrap, make an online version using firebase</div>
+
 
 
 export const ImgAndSpan = (props) => {
@@ -107,7 +110,7 @@ export const About = (props) => {
                 <span className="Content__about-me_p" >
                     JS libraries i worked with:
                 </span>
-                    <RowOfSpans spans = {["React", "Vue2", "redux", "react-redux", "vuex", "axios", "vuetify", "chart.js"]}/>
+                    <RowOfSpans spans = {["React", "Vue2", "redux", "react-redux", "redux toolkit", "vuex", "axios", "vuetify", "chart.js"]}/>
                 </div>
             </div>
             <Element name="Projects">
@@ -122,6 +125,13 @@ export const About = (props) => {
                         text = {text1}
                         git = {"https://github.com/Kand1/Learn_React"}
                         deploy = {"https://kand1.github.io/Learn_React/"}
+                    />
+                    <Project
+                        name = "Four player chess"
+                        src = {src7}
+                        text = {text7}
+                        git = {"https://github.com/Kand1/react-ts-chess"}
+                        deploy = {"https://kand1.github.io/react-ts-chess"}
                     />
                     <Project
                         name = "Product list"
