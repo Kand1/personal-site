@@ -8,6 +8,7 @@ import src4 from "../assets/friend-list.jpg";
 import src5 from "../assets/product-list.jpg";
 import src6 from "../assets/cryptocurrency-converter.jpg";
 import src7 from "../assets/chess.jpg"
+import src8 from "../assets/storybook.jpg"
 import {Project} from "./Projects";
 import {Element} from "react-scroll";
 
@@ -21,6 +22,7 @@ const text4 = "Test web app for authorization with VK and Drag'n'Drop HTML api."
 const text5 = "Product adding form with validation and product list with animations of filtering and deleting."
 const text6 = "Cryptocurrency converter with graph of exchange rate for 2 week period."
 const text7 = <div>Work in progress! <br/> Done: fully playable local 4 player chess. <br/> To do: make a modern UI using bootstrap, make an online version using firebase</div>
+const text8 = "test npm ui module i made using storybook"
 
 
 
@@ -110,7 +112,7 @@ export const About = (props) => {
                 <span className="Content__about-me_p" >
                     JS libraries i worked with:
                 </span>
-                    <RowOfSpans spans = {["React", "Vue2", "redux", "react-redux", "redux toolkit", "vuex", "axios", "vuetify", "chart.js"]}/>
+                    <RowOfSpans spans = {["React", "Vue2", "redux", "react-redux", "redux toolkit", "vuex", "axios", "vuetify", "chart.js", "storybook"]}/>
                 </div>
             </div>
             <Element name="Projects">
@@ -139,6 +141,13 @@ export const About = (props) => {
                         text = {text5}
                         git = {"https://github.com/Kand1/product-list-test-case/"}
                         deploy = {"https://kand1.github.io/product-list-test-case/"}
+                    />
+                    <Project
+                        name = "Storybook npm module"
+                        src = {src8}
+                        text = {text8}
+                        git = {"https://github.com/Kand1/test-ui-npm-module"}
+                        deploy = {"https://www.npmjs.com/package/test-ui-npm-module"}
                     />
                     <Project
                         name = "Cryptocurrency converter"
